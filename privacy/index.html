@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Easy Receipt Canada</title>
+<style>
+:root { --bg: #ffffff; --text: #1c1c1e; --muted: #6e6e73; --line: #e5e5ea; --accent: #d52b1e; --card: #f5f5f7; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1c1c1e; --text: #f2f2f7; --muted: #a1a1a6; --line: #38383a; --accent: #ff5a4e; --card: #2c2c2e; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+header img { width: 48px; height: 48px; border-radius: 11px; }
+header a.brand { color: var(--text); text-decoration: none; font-weight: 700; font-size: 20px; }
+nav { margin-left: auto; display: flex; gap: 16px; font-size: 15px; }
+a { color: var(--accent); }
+h1 { font-size: 30px; line-height: 1.2; margin: 32px 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 8px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--card); }
+.card { background: var(--card); border-radius: 14px; padding: 16px 20px; margin: 16px 0; }
+.lang { font-size: 15px; color: var(--muted); }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="../icon.png" alt="">
+  <a class="brand" href="../">Easy Receipt Canada</a>
+  <nav><a href="../privacy/">Privacy / Confidentialité</a><a href="../support/">Support</a></nav>
+</header>
+<p class="lang"><a href="#fr">Français ↓</a></p>
+<h1>Privacy Policy: Easy Receipt Canada</h1>
+<p><strong>Effective date:</strong> October 29, 2026<br><strong>Who we are:</strong> Xinran Zhou, an individual developer in Canada ("we", "us").<br><strong>Contact:</strong> <a href="mailto:easyreceiptca@gmail.com">easyreceiptca@gmail.com</a></p>
+<h2>1. The short version</h2>
+<ul>
+<li>Your receipts stay on your iPhone by default.
+</li>
+<li>We have no ads, no tracking, no analytics tools and we never sell data.
+</li>
+<li>Two optional features send data off your phone. Both are off until you turn them on:
+<ul>
+<li><strong>Read receipts with Claude:</strong> sends the text of a receipt (never the photo) to be read by an AI service.
+</li>
+<li><strong>Cloud backup (Pro):</strong> stores your receipts and photos in Canada.
+</li></ul>
+</li>
+<li>You can delete your account and all your cloud data from Settings at any time.
+</li></ul>
+<h2>2. Person in charge of protecting personal information</h2>
+<p>The person in charge of the protection of personal information is Xinran Zhou. Reach us at <a href="mailto:easyreceiptca@gmail.com">easyreceiptca@gmail.com</a>.</p>
+<h2>3. What we collect and why</h2>
+<h3>a) Data that stays on your iPhone (default)</h3>
+<p>Easy Receipt Canada scans receipts with your camera, reads them with Apple's on-device text recognition, detects the province, splits sales tax (GST, HST, PST, RST, QST) and files each expense under a CRA T2125 category. Receipts, photos, reports and settings are stored in the app's local database on your device. We do not receive this data. If you delete the app, this data is deleted from your phone.</p>
+<p>Receipts are business financial information. They can also contain personal information, such as vendor names, your notes, and your name or address if they are printed on a receipt.</p>
+<h3>b) If you turn on "Read receipts with Claude"</h3>
+<table><thead><tr><th>What is sent</th><th>Where</th><th>Why</th></tr></thead><tbody>
+<tr><td>The text recognized on a receipt (never the photo)</td><td>Our server function (Supabase Edge Functions, project in Canada, Montréal region), which forwards it to Anthropic's Claude API in the United States</td><td>To return structured fields (vendor, date, amounts, taxes) so you do not type them</td></tr>
+</tbody></table>
+<ul>
+<li>Our server logs only usage metadata: your anonymous user id, the model used, token counts, request status and timestamp. We do not store the receipt text.
+</li>
+<li>Anthropic acts as our service provider. How it handles API data is described in its commercial terms and privacy policy.
+</li>
+<li>Because the text may contain personal information, avoid scanning receipts that show information you do not want processed this way. You can turn this feature off at any time in Settings.
+</li></ul>
+<h3>c) If you turn on cloud backup (Pro)</h3>
+<p>We store in Supabase, in Canada (ca-central-1): vendor, date, province, amounts, taxes, category, notes, vendor tax numbers, the recognized text, and your receipt photos. Row-level security means each user can only see their own data. We use it only to back up and restore your receipts.</p>
+<h3>d) Accounts</h3>
+<ul>
+<li><strong>Anonymous account:</strong> created automatically the first time you use Claude reading or backup. It is a random id with no name or email.
+</li>
+<li><strong>Sign in with Apple (optional):</strong> links your Apple ID so you can restore on another device. We receive an email address, which may be an Apple private-relay address.
+</li></ul>
+<h3>e) Purchases</h3>
+<p>Pro is an Apple In-App Purchase. Apple handles payment. We do not see your card or payment details.</p>
+<h3>f) What we do not do</h3>
+<p>No advertising, no tracking across apps or websites, no analytics or third-party SDKs (only Apple frameworks), and no sale or sharing of data for marketing.</p>
+<h2>4. Legal bases and consent</h2>
+<ul>
+<li><strong>PIPEDA (federal):</strong> we rely on your <strong>consent</strong>. Optional features are off by default and you opt in. You can withdraw consent at any time by turning a feature off or deleting your account.
+</li>
+<li><strong>Quebec's Law 25 (Act respecting the protection of personal information in the private sector):</strong> we collect only what is needed for the purposes above and ask for your <strong>express consent</strong> before any optional feature sends data off your device. Consent is requested separately for each feature, in clear terms.
+</li>
+<li>Data needed to run the app on your device never leaves it, so no consent is needed for that.
+</li></ul>
+<h2>5. Transfers outside Quebec and Canada</h2>
+<ul>
+<li>Cloud backup data and anonymous account data are stored in Canada (Montréal).
+</li>
+<li>When you turn on Claude reading, receipt text is processed by Anthropic in the <strong>United States</strong>. This happens only when you turn it on, and only for the text of receipts you choose to read.
+</li>
+<li>Before this transfer we assessed the privacy risks, as required by Quebec law, and rely on contractual protections with the provider. Privacy laws in the United States differ from those in Quebec and Canada.
+</li>
+<li>You can avoid any transfer outside Canada by leaving Claude reading off.
+</li></ul>
+<h2>6. How long we keep data</h2>
+<ul>
+<li><strong>On your iPhone:</strong> until you delete the receipts or the app.
+</li>
+<li><strong>Cloud backup:</strong> until you delete the receipts or your account. Account deletion removes your cloud data immediately.
+</li>
+<li><strong>Usage logs (user id, model, token counts, status, timestamp):</strong> kept for 12 months to run, secure and bill the service, then deleted automatically.
+</li>
+<li><strong>Receipt text sent for Claude reading:</strong> not stored by us. Anthropic's handling is described in its terms and privacy policy.
+</li></ul>
+<h2>7. Security</h2>
+<p>Data is encrypted in transit (TLS). Cloud data is protected by row-level security and access controls on the Canadian-hosted database. No system is perfectly secure. If an incident presents a risk of serious injury to you, we will notify you and the regulator as the law requires.</p>
+<h2>8. Your rights</h2>
+<p>You can ask to access, correct or delete your personal information, receive a copy in a common format (portability), or withdraw your consent.</p>
+<ul>
+<li><strong>In the app:</strong> edit or delete receipts, export CSV or PDF, turn off Claude reading or backup, and use <strong>Settings &gt; Delete account</strong> to remove your account and all cloud data. Deletion is immediate. Receipts stored locally stay on your phone unless you delete them or the app.
+</li>
+<li><strong>By email:</strong> write to <a href="mailto:easyreceiptca@gmail.com">easyreceiptca@gmail.com</a>. We reply within 30 days.
+</li></ul>
+<h2>9. Children</h2>
+<p>The app is not directed at children under 14. We do not knowingly collect information from them. If you believe a child has given us information, contact us and we will delete it.</p>
+<h2>10. Complaints</h2>
+<p>Please contact us first. You can also complain to:</p>
+<ul>
+<li><strong>Commission d'accès à l'information du Québec:</strong> <a href="https://www.cai.gouv.qc.ca">https://www.cai.gouv.qc.ca</a>
+</li>
+<li><strong>Office of the Privacy Commissioner of Canada:</strong> <a href="https://www.priv.gc.ca">https://www.priv.gc.ca</a>
+</li></ul>
+<h2>11. Changes to this policy</h2>
+<p>We will post changes here and update the effective date. For significant changes, we will tell you in the app before they apply. If a change requires new consent, we will ask for it.</p>
+<hr>
+<div id="fr" lang="fr">
+<h1>Politique de confidentialité : Easy Receipt Canada</h1>
+<p><strong>Date d'entrée en vigueur :</strong> 29 octobre 2026<br><strong>Qui nous sommes :</strong> Xinran Zhou, développeur indépendant au Canada (« nous »).<br><strong>Coordonnées :</strong> <a href="mailto:easyreceiptca@gmail.com">easyreceiptca@gmail.com</a></p>
+<h2>1. En bref</h2>
+<ul>
+<li>Vos reçus restent sur votre iPhone par défaut.
+</li>
+<li>Nous n'avons ni publicité, ni suivi, ni outil d'analyse, et nous ne vendons jamais de données.
+</li>
+<li>Deux fonctions facultatives envoient des données hors de votre téléphone. Les deux sont désactivées tant que vous ne les activez pas :
+<ul>
+<li><strong>Lire les reçus avec Claude :</strong> envoie le texte d'un reçu (jamais la photo) à un service d'IA pour qu'il soit lu.
+</li>
+<li><strong>Sauvegarde infonuagique (Pro) :</strong> stocke vos reçus et vos photos au Canada.
+</li></ul>
+</li>
+<li>Vous pouvez supprimer votre compte et toutes vos données infonuagiques dans les réglages en tout temps.
+</li></ul>
+<h2>2. Personne responsable de la protection des renseignements personnels</h2>
+<p>La personne responsable de la protection des renseignements personnels est Xinran Zhou. Joignez-nous à <a href="mailto:easyreceiptca@gmail.com">easyreceiptca@gmail.com</a>.</p>
+<h2>3. Ce que nous recueillons et pourquoi</h2>
+<h3>a) Données qui restent sur votre iPhone (par défaut)</h3>
+<p>Easy Receipt Canada numérise vos reçus avec la caméra, les lit grâce à la reconnaissance de texte d'Apple directement sur l'appareil, détecte la province, sépare les taxes de vente (TPS, TVH, TVP, TVD, TVQ) et classe chaque dépense dans une catégorie T2125 de l'ARC. Les reçus, les photos, les rapports et les réglages sont stockés dans la base de données locale de l'application, sur votre appareil. Nous ne recevons pas ces données. Si vous supprimez l'application, elles sont effacées de votre téléphone.</p>
+<p>Les reçus sont des renseignements financiers d'entreprise. Ils peuvent aussi contenir des renseignements personnels, comme le nom des fournisseurs, vos notes, ainsi que votre nom ou votre adresse s'ils sont imprimés sur un reçu.</p>
+<h3>b) Si vous activez « Lire les reçus avec Claude »</h3>
+<table><thead><tr><th>Ce qui est envoyé</th><th>Où</th><th>Pourquoi</th></tr></thead><tbody>
+<tr><td>Le texte reconnu sur un reçu (jamais la photo)</td><td>Notre fonction serveur (Supabase Edge Functions, projet situé au Canada, région de Montréal), qui le transmet à l'API Claude d'Anthropic, aux États-Unis</td><td>Pour obtenir des champs structurés (fournisseur, date, montants, taxes) sans les saisir vous-même</td></tr>
+</tbody></table>
+<ul>
+<li>Notre serveur ne journalise que des métadonnées d'utilisation : votre identifiant d'utilisateur anonyme, le modèle utilisé, le nombre de jetons, l'état de la requête et l'horodatage. Nous ne conservons pas le texte du reçu.
+</li>
+<li>Anthropic agit comme fournisseur de services. Sa façon de traiter les données de l'API est décrite dans ses conditions commerciales et sa politique de confidentialité.
+</li>
+<li>Comme le texte peut contenir des renseignements personnels, évitez de numériser des reçus montrant des renseignements que vous ne voulez pas voir traités de cette façon. Vous pouvez désactiver cette fonction en tout temps dans les réglages.
+</li></ul>
+<h3>c) Si vous activez la sauvegarde infonuagique (Pro)</h3>
+<p>Nous stockons dans Supabase, au Canada (ca-central-1) : le fournisseur, la date, la province, les montants, les taxes, la catégorie, les notes, les numéros de taxes du fournisseur, le texte reconnu et vos photos de reçus. La sécurité au niveau des lignes fait que chaque utilisateur ne voit que ses propres données. Nous les utilisons uniquement pour sauvegarder et restaurer vos reçus.</p>
+<h3>d) Comptes</h3>
+<ul>
+<li><strong>Compte anonyme :</strong> créé automatiquement la première fois que vous utilisez la lecture par Claude ou la sauvegarde. C'est un identifiant aléatoire, sans nom ni courriel.
+</li>
+<li><strong>Se connecter avec Apple (facultatif) :</strong> lie votre identifiant Apple pour restaurer vos données sur un autre appareil. Nous recevons une adresse courriel, qui peut être une adresse de relais privé d'Apple.
+</li></ul>
+<h3>e) Achats</h3>
+<p>Pro est un achat intégré Apple. Apple gère le paiement. Nous ne voyons ni votre carte ni vos renseignements de paiement.</p>
+<h3>f) Ce que nous ne faisons pas</h3>
+<p>Aucune publicité, aucun suivi entre applications ou sites Web, aucun outil d'analyse ni trousse de développement tierce (seulement les cadres d'Apple), et aucune vente ni communication de données à des fins de marketing.</p>
+<h2>4. Fondements juridiques et consentement</h2>
+<ul>
+<li><strong>LPRPDE (fédéral) :</strong> nous nous appuyons sur votre <strong>consentement</strong>. Les fonctions facultatives sont désactivées par défaut et vous les activez volontairement. Vous pouvez retirer votre consentement en tout temps en désactivant une fonction ou en supprimant votre compte.
+</li>
+<li><strong>Loi 25 du Québec (Loi sur la protection des renseignements personnels dans le secteur privé) :</strong> nous ne recueillons que ce qui est nécessaire aux fins décrites ci-dessus et demandons votre <strong>consentement exprès</strong> avant qu'une fonction facultative n'envoie des données hors de votre appareil. Le consentement est demandé séparément pour chaque fonction, en termes clairs.
+</li>
+<li>Les données nécessaires au fonctionnement de l'application sur votre appareil ne le quittent pas : aucun consentement n'est donc requis à cet égard.
+</li></ul>
+<h2>5. Communication hors du Québec et du Canada</h2>
+<ul>
+<li>Les données de sauvegarde infonuagique et des comptes anonymes sont stockées au Canada (Montréal).
+</li>
+<li>Quand vous activez la lecture par Claude, le texte des reçus est traité par Anthropic aux <strong>États-Unis</strong>. Cela se produit seulement si vous l'activez, et seulement pour le texte des reçus que vous choisissez de faire lire.
+</li>
+<li>Avant cette communication, nous avons évalué les risques pour la vie privée, comme l'exige la loi du Québec, et nous nous appuyons sur des protections contractuelles avec le fournisseur. Les lois sur la protection de la vie privée des États-Unis diffèrent de celles du Québec et du Canada.
+</li>
+<li>Vous pouvez éviter toute communication hors du Canada en laissant la lecture par Claude désactivée.
+</li></ul>
+<h2>6. Durée de conservation</h2>
+<ul>
+<li><strong>Sur votre iPhone :</strong> jusqu'à ce que vous supprimiez les reçus ou l'application.
+</li>
+<li><strong>Sauvegarde infonuagique :</strong> jusqu'à ce que vous supprimiez les reçus ou votre compte. La suppression du compte efface immédiatement vos données infonuagiques.
+</li>
+<li><strong>Journaux d'utilisation (identifiant, modèle, nombre de jetons, état, horodatage) :</strong> conservés 12 mois pour exploiter et sécuriser le service et en assurer la facturation, puis détruits automatiquement.
+</li>
+<li><strong>Texte envoyé pour la lecture par Claude :</strong> non conservé par nous. Le traitement par Anthropic est décrit dans ses conditions et sa politique de confidentialité.
+</li></ul>
+<h2>7. Sécurité</h2>
+<p>Les données sont chiffrées en transit (TLS). Les données infonuagiques sont protégées par la sécurité au niveau des lignes et des contrôles d'accès sur la base de données hébergée au Canada. Aucun système n'est parfaitement sûr. Si un incident présente un risque de préjudice sérieux pour vous, nous vous en aviserons, ainsi que l'organisme de réglementation, comme la loi l'exige.</p>
+<h2>8. Vos droits</h2>
+<p>Vous pouvez demander d'accéder à vos renseignements personnels, de les faire corriger ou supprimer, d'en recevoir une copie dans un format courant (portabilité) ou de retirer votre consentement.</p>
+<ul>
+<li><strong>Dans l'application :</strong> modifier ou supprimer des reçus, exporter en CSV ou en PDF, désactiver la lecture par Claude ou la sauvegarde, et utiliser <strong>Réglages &gt; Supprimer le compte</strong> pour effacer votre compte et toutes vos données infonuagiques. La suppression est immédiate. Les reçus stockés localement restent sur votre téléphone, sauf si vous les supprimez ou supprimez l'application.
+</li>
+<li><strong>Par courriel :</strong> écrivez à <a href="mailto:easyreceiptca@gmail.com">easyreceiptca@gmail.com</a>. Nous répondons dans les 30 jours.
+</li></ul>
+<h2>9. Enfants</h2>
+<p>L'application ne s'adresse pas aux enfants de moins de 14 ans. Nous ne recueillons pas sciemment de renseignements à leur sujet. Si vous croyez qu'un enfant nous a fourni des renseignements, écrivez-nous et nous les supprimerons.</p>
+<h2>10. Plaintes</h2>
+<p>Veuillez d'abord nous contacter. Vous pouvez aussi déposer une plainte auprès de :</p>
+<ul>
+<li><strong>la Commission d'accès à l'information du Québec :</strong> <a href="https://www.cai.gouv.qc.ca">https://www.cai.gouv.qc.ca</a>
+</li>
+<li><strong>le Commissariat à la protection de la vie privée du Canada :</strong> <a href="https://www.priv.gc.ca">https://www.priv.gc.ca</a>
+</li></ul>
+<h2>11. Modifications de cette politique</h2>
+<p>Nous publierons les modifications ici et mettrons à jour la date d'entrée en vigueur. Pour les changements importants, nous vous en informerons dans l'application avant leur application. Si un changement exige un nouveau consentement, nous le demanderons.</p>
+</div>
+<footer>© 2026 Xinran Zhou · <a href="mailto:easyreceiptca@gmail.com">easyreceiptca@gmail.com</a></footer>
+</main>
+</body>
+</html>
